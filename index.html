@@ -10,6 +10,40 @@
     </head>
 
     <body>
-        <h1>Placeholder</h1>
+        <header class="site-header">
+            <h1 class="site-title">Welcome to Reveal That Animal!</h1>
+            <p class="site-subtitle">Click on the buttons below to reveal the images</p>
+        </header>
+
+        <main class="site-main">
+            <section class="animal-group">
+                <article id="cat-container" class="animal-items hidden">
+                    <img class="animal-image" src="images/tabby-cat.jpg" alt="A brown tabby cat sitting on a tree branch.">
+                    <button id="cat-hide"class="btn btn-hide" type="button">Hide Animal</button>
+                </article>
+                <button id="cat-reveal" class="btn btn-reveal" type="button">Reveal a CAT</button>
+            </section>
+
+
+            <section class="animal-group">
+                <article id="dog-container" class="animal-items hidden">
+                    <img class="animal-image" src="images/dog.jpg" alt="A golden retriever puppy at the beach.">
+                    <button id="dog-hide" class="btn btn-hide" type="button">Hide Animal</button>
+                </article>
+                <button id="dog-reveal" class="btn btn-reveal" type="button">Reveal a DOG</button>
+            </section>
+
+            <section class="animal-group">
+                <article id="cow-container" class="animal-items hidden">
+                    <img class="animal-image" src="images/cow.jpg" alt="A fluffy brown cow eating grass in a field.">
+                    <button id="cow-hide" class="btn btn-hide" type="button">Hide Animal</button>
+                </article>
+                <button id="cow-reveal" class="btn btn-reveal" type="button">Reveal a COW</button>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p class="footer-copy">&copy; Fall 2026 CSI 3150 Live Sprint 1 (August Terrell)</p>
+        </footer>
     </body>
 </html>

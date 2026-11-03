@@ -1,5 +1,110 @@
+/* Browser formatting reset */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/* Sitewide styling */
+html {
+    display: flex;
+    flex-direction: column;
+    font-family: "Arial", sans-serif;
+}
+
+/* Button hierarchy styling */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    background-color: #fff;
+    font-weight: 600;
+    width: fit-content;
+    padding: 0.65rem 1.2rem;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn-hide {
+    color: #fff;
+    background-color: #6495ed;
+    width: 100%;
+    padding: 0.35rem 0.75rem;
+}
+
+.btn-reveal {
+    border-color: #000;
+}
+
+/* Header styling */
+.site-header {
+    text-align: center;
+    padding: 2rem 4rem;
+    border-bottom: 2px solid #000;
+}
+
+.site-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.site-subtitle {
+    font-size: 1rem;
+}
+
+/* Main content styling */
+.site-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 2rem;
+}
+
+.animal-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.animal-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+    padding: 1rem;
+    border: 2px solid #000;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    transition: transform 0.2s;
+}
+
+.animal-items:hover {
+    transform: translateY(-4px);
+}
+
+.animal-image {
+    max-width: 16rem;
+    max-height: 18rem;
+    border-radius: 4px;
+}
+
+/* Footer styling */
+.site-footer {
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 2rem 4rem;
+    border-top: 2px solid #000;
+}
+
+/* Dynamic styling */
+.hidden {
+    display: none;
 }
